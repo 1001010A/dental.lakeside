@@ -14,5 +14,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="es-MX" className={`${display.variable} ${body.variable}`}><body className="font-[family-name:var(--font-body)]">{children}</body></html>;
+  return <html lang="es-MX" className={`${display.variable} ${body.variable}`}><body>{children}</body></html>;
 }

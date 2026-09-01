@@ -3,10 +3,10 @@
 :root { --color-primary: #103b52; --color-accent: #b79036; --color-bg: #f4eddf; --color-fg: #182225; --color-paper: #fffaf0; }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-family: Arial, sans-serif; }
+body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-family: var(--font-body), Arial, sans-serif; }
 body.menu-open { overflow: hidden; }
 ::selection { background: var(--color-accent); color: var(--color-primary); }
-.serif { font-family: Georgia, serif; }
+.serif { font-family: var(--font-display), Georgia, serif; }
 .paper { background-color: var(--color-paper); background-image: radial-gradient(var(--color-primary) 0.5px, transparent 0.5px); background-size: 12px 12px; }
 .text-primary { color: var(--color-primary); }.text-accent { color: var(--color-accent); }.bg-primary { background: var(--color-primary); }.bg-accent { background: var(--color-accent); }.border-primary { border-color: var(--color-primary); }
 .button-primary, .button-secondary { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; min-height: 3rem; padding: 0.75rem 1.25rem; font-weight: 700; text-decoration: none; transition: transform 150ms, background-color 150ms, color 150ms; }
