@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+:root { --color-primary: #103b52; --color-accent: #b79036; --color-bg: #f4eddf; --color-fg: #182225; --color-paper: #fffaf0; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-family: Arial, sans-serif; }
+body.menu-open { overflow: hidden; }
+::selection { background: var(--color-accent); color: var(--color-primary); }
+.serif { font-family: Georgia, serif; }
+.paper { background-color: var(--color-paper); background-image: radial-gradient(var(--color-primary) 0.5px, transparent 0.5px); background-size: 12px 12px; }
+.text-primary { color: var(--color-primary); }.text-accent { color: var(--color-accent); }.bg-primary { background: var(--color-primary); }.bg-accent { background: var(--color-accent); }.border-primary { border-color: var(--color-primary); }
+.button-primary, .button-secondary { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; min-height: 3rem; padding: 0.75rem 1.25rem; font-weight: 700; text-decoration: none; transition: transform 150ms, background-color 150ms, color 150ms; }
+.button-primary { background: var(--color-primary); color: var(--color-paper); }.button-primary:hover { background: var(--color-accent); color: var(--color-primary); transform: translateY(-2px); }
+.button-secondary { border: 1px solid var(--color-primary); color: var(--color-primary); }.button-secondary:hover { background: var(--color-primary); color: var(--color-paper); transform: translateY(-2px); }
+.button-primary:focus-visible, .button-secondary:focus-visible, a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, summary:focus-visible { outline: 3px solid var(--color-accent); outline-offset: 3px; }
+.image-placeholder { background: var(--color-primary); color: var(--color-paper); display: flex; align-items: center; justify-content: center; min-height: 18rem; padding: 2rem; text-align: center; }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; } }
