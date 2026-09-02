@@ -16,3 +16,7 @@ export function buildAppointmentUrl(data: AppointmentData): string {
 export function buildInfoUrl(): string {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`¡Hola ${BUSINESS_NAME}! Me gustaría recibir más información sobre sus servicios.`)}`;
 }
+
+export function buildManageUrl(): string {
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(`¡Hola ${BUSINESS_NAME}! Necesito reagendar o cancelar una cita existente. ¿Me pueden ayudar?`)}`;
+}

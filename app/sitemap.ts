@@ -1,2 +1,2 @@
 import type { MetadataRoute } from "next";
-export default function sitemap(): MetadataRoute.Sitemap { const baseUrl = "https://dental-lakeside.vercel.app"; return [{ url: baseUrl, lastModified: new Date(), changeFrequency: "weekly", priority: 1 }, { url: `${baseUrl}/aviso-de-privacidad`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 }]; }
+export default function sitemap(): MetadataRoute.Sitemap { const baseUrl = "https://dentallakeside.vercel.app"; return [{ url: baseUrl, lastModified: new Date(), changeFrequency: "weekly", priority: 1 }, { url: `${baseUrl}/aviso-de-privacidad`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 }]; }
