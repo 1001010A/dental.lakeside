@@ -1,0 +1,2 @@
+import { MessageCircle } from "lucide-react"; import { buildInfoUrl } from "@/lib/whatsapp";
+export function WhatsAppButton() { return <a className="bg-primary fixed right-4 bottom-4 z-30 flex h-14 w-14 items-center justify-center rounded-full text-[var(--color-paper)] shadow-lg hover:bg-accent hover:text-primary focus-visible:outline-3 focus-visible:outline-offset-4 focus-visible:outline-[var(--color-accent)]" href={buildInfoUrl()} target="_blank" rel="noopener noreferrer" aria-label="Escribir a Dental Lakeside por WhatsApp"><MessageCircle aria-hidden="true" /></a>; }
